@@ -3,7 +3,7 @@
 # Partner 2: Alexander Ngov
 
 import unittest
-from calculator import add, subtract, multiply, divide, logarithm, exp, square_root, hypotenuse
+from calculator import add, subtract, mul, div, logarithm, exp, square_root, hypotenuse
 
 class TestCalculator(unittest.TestCase):
 
@@ -19,7 +19,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            divide(0, 5)
+            div(0, 5)
 
     def test_logarithm(self):
         self.assertAlmostEqual(logarithm(2, 8), 3)
